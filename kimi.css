@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 161, 172);
+    flex-direction: column;
+}
+
+#passcode-body {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(221, 162, 221);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(133, 22, 126);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+#pass-title {
+    margin-top: 10px;
+    display: flex;
+    font-weight: bold;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#pass-head {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(51, 11, 80);
+    margin-left: 15px;
+}
+
+#lines {
+    background: linear-gradient(to top right, rgb(219, 28, 174), rgb(223, 140, 140) );
+    border: 5px inset rgb(185, 140, 217);
+    font-size: 20px;
+    color: rgb(51, 11, 80);
+}
+
+#pass-screen {
+    padding: 5px;
+}
+
+#screen {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 22px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 16em;
+    text-align: center;
+    font-size: 29.4px;
+    margin: 10px;
+    
+}
+
+.number_row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 6px;
+
+}
+
+.number_row button {
+    display: flex;
+    padding: 25px;
+    width: 90px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    box-shadow: 8px 8px 10px rgb(93, 3, 69);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.5s;
+
+}
+
+.numberkeys:active {
+    background-color: rgb(237, 94, 118);
+    transform: scale(0.7); /*changed the form of the button*/
+}
+
+.operator:active {
+    background-color: rgb(64, 3, 163);
+    transform: scale(0.7); /*changed the form of the button*/
+}
+
+
+
