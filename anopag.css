@@ -5,7 +5,8 @@
 
 body{
     display: flex;
-    background: url('imgs/bg.png') no-repeat;
+    /* background: url('imgs/bg.png') no-repeat; */
+    background-color: pink;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -16,42 +17,84 @@ body{
 
 #coupal {
     position: absolute;
-    width: 20em;
-    height: 20em;
-    top: 60%; /* Centers vertically */
-    left: 50%; /* Moves it to the left side */
+    width: 20vw;
+    height: 20vw;
+    top: 80%; /* Centers vertically */
+    left: 60%; /* Moves it to the left side */
     bottom: 5%;
-    transform: translate(90%,20%);
+    /* transform: translate(90%,20%); */
     /* transform: translate(-50%, 0); Start centered */
+    transform: translate(-50%, -50%);
     animation: dance 3s infinite alternate ease-in-out;
 }
 
 #disco {
     position: absolute;
-    width: 1em;
-    height: 15em;
-    top: 11%; /* Adjusts position */
-    right: 95%; /* Moves it to the right side */
-    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 15vw;
+    top: 2%; /* Adjusts position */
+    left: 5%; /* Moves it to the right side */
 }
 
-#coupal img {
-    width: 20em;
-    height: 20em;
+#coupal img, #disco img {
+    width: 20vw;
+    height: 20vw;
 }
 
-#disco img {
-    width: 20em;
-    height: 20em;
-}
+
+/* Animation for coupal */
 @keyframes dance {
     0% {
-        transform: translate(10%, 0);
+        transform: translate(-50%, -50%) translateX(10%);
     }
     70% {
-        transform: translate(-190%, 0); /* Move to the left */
+        transform: translate(-50%, -50%) translateX(-190%);
     }
     100% {
-        transform: translate(-100%, 0); /* Return to original position */
+        transform: translate(-50%, -50%) translateX(-100%);
+    }
+}
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    #coupal {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #disco {
+        width: 15vw;
+        height: 20vw;
+        top: 5%;
+        left: 5%;
+    }
+
+/* Media query for smaller phones */
+@media (max-width: 480px) {
+    #coupal {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #disco {
+        width: 20vw;
+        height: 25vw;
+        top: 2%;
+        left: 2%;
+    }
+}
+
+    /* Adjust animation for smaller screens */
+    @keyframes dance {
+        0% {
+            transform: translate(-50%, -50%) translateX(5%);
+        }
+        70% {
+            transform: translate(-50%, -50%) translateX(-100%);
+        }
+        100% {
+            transform: translate(-50%, -50%) translateX(-50%);
+        }
     }
 }
