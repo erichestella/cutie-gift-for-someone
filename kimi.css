@@ -17,8 +17,9 @@ body {
 }
 
 #passcode-body {
-    height: 500px;
-    width: 500px;
+    height: 65vh;
+    width: 500vw;
+    max-width: 500px;
     background-color: rgb(221, 162, 221);
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(133, 22, 126);
