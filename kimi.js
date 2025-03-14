@@ -1,6 +1,6 @@
 let screen = document.getElementById('screen');
 let current = '';
-let pass = "100924";
+let pass = "090924";
 let int = document.querySelectorAll('.numberkeys');
 
 int.forEach(function(button){
