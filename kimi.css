@@ -14,12 +14,13 @@ body {
     align-items: center;
     background-color: rgb(228, 161, 172);
     flex-direction: column;
+    padding: 10px; /* Prevents elements from touching the edges */
 }
 
 #passcode-body {
-    height: 65vh;
-    width: 100vw;
-    max-width: 500px;
+    /* height: 65vh; */
+    width: 120vw;
+    max-width: 450px;
     background-color: rgb(221, 162, 221);
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(133, 22, 126);
@@ -53,7 +54,7 @@ body {
 }
 
 #pass-screen {
-    padding: 5px;
+    padding: 10px;
 }
 
 #screen {
@@ -64,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 16em;
+    width: 14em;
     text-align: center;
     font-size: 29.4px;
     margin: 10px;
@@ -73,7 +74,7 @@ body {
 
 .number_row {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
     margin: 6px;
 
@@ -103,6 +104,22 @@ body {
 .operator:active {
     background-color: rgb(64, 3, 163);
     transform: scale(0.7); /*changed the form of the button*/
+}
+
+@media (max-width: 400px) {
+    #passcode-body {
+        width: 150vw;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+    /* .number_row button {
+        width: 60px;
+        font-size: 14px;
+    } */
 }
 
 
